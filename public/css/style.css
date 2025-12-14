@@ -1,0 +1,305 @@
+/* FONT */
+.potta-one-regular {
+  font-family: "Potta One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: rgb(255, 223, 223);
+    padding-bottom: 0;
+}
+
+.login-btn{
+    background-color: #009970;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.register-btn{
+    background-color: #009970;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.logout-btn{
+    background-color: #009970;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.dropdown .btn {
+    background-color: #009970;;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+.login-btn:hover{
+    background-color: #00b383;
+}
+
+.register-btn:hover{
+    background-color: #00b383;
+}
+
+.logout-btn:hover{
+    background-color: #00b383;
+}
+
+.dropdown .btn:hover {
+    background-color: #00b383;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    transition: color 0.3s ease; /* Add this */
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #01b251;
+}
+
+.shopping-cart {
+    color: black;          /* Icon color */
+    font-size: 25px;         /* Icon size */
+    text-decoration: none; 
+}
+
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* full viewport height */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(50deg, #0A0426, #1f1fcf);
+}
+
+.hero-content {
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero .text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero .text h1 {
+    color: white;
+    font-family: 'Potta One';
+    font-size: 68px;
+    margin-bottom: 20px;
+}
+
+.hero .text p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: green;
+    margin-bottom: 30px;
+}
+
+/* Button Style */
+.hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6b6b; /* vibrant call-to-action color */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #ff4c4c;
+    transform: translateY(-2px);
+}
+
+.hero .image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive: stack text and image on smaller screens */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero .image {
+        text-align: center;
+    }
+}
+
+
+/* FIGURINE CARD SECTION */
+.collections {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.collections h1 {
+    font-family: 'Potta One';
+    font-weight: 400;
+}
+
+.collections h3 {
+    text-align: center;
+}
+
+.collections .collections-text {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   /* keeps cards in multiple rows */
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;         /* spacing between cards */
+}
+
+.card {
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    
+    display: flex;
+    flex-direction: column;  /* ensures button can be pushed to bottom */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;         /* lets this section expand to push button down */
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: justify;
+    margin-bottom: 16px;   /* optional: spacing between text and button */
+}
+
+.price-qty {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.price-qty p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;   /* push buttons to bottom */
+}
+
+.card-buttons .btn {
+    flex: 1;    /* makes both buttons same width */
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.view-btn {
+    background-color: #444;
+}
+
+.cart-btn {
+    background-color: #008060;
+}
+
+.card-content .btn:hover{
+    background-color: #258dee;
+}
